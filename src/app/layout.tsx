@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "UTAF | University of Tokyo Autonomy Forge",
   description:
-    "UTAFは、フィジカルAIを学び、技術力を養う東京大学のロボットAIサークルです。",
+    "UTAFは、フィジカルAIを学び、技術力を養う東京大学フィジカルAI学生団体です。",
 };
 
 export default function RootLayout({
