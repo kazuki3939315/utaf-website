@@ -285,9 +285,7 @@ export default function Home() {
               Join
             </p>
             <h2 className="mt-4 text-4xl font-black leading-tight text-[var(--color-ink)] md:text-6xl">
-              Aセメスターに
-              <br />
-              新歓を行います。
+              この夏、ロボットを動かす側へ！
             </h2>
           </div>
           <div className="tech-callout p-7">
