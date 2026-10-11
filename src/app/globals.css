@@ -26,6 +26,16 @@ html {
   background: var(--color-paper);
 }
 
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   position: relative;
   background: transparent;
@@ -63,6 +73,11 @@ body > * {
   text-wrap: balance;
 }
 
+.hero-photo {
+  position: absolute;
+  inset: 0;
+}
+
 .hero-image {
   object-fit: cover;
   object-position: 36% center;
@@ -74,6 +89,29 @@ body > * {
   background:
     linear-gradient(90deg, rgba(249, 248, 243, 0.98) 0%, rgba(249, 248, 243, 0.88) 52%, rgba(249, 248, 243, 0.58) 100%),
     linear-gradient(180deg, rgba(249, 248, 243, 0) 70%, rgba(249, 248, 243, 0.84) 100%);
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-photo {
+    position: relative;
+    order: 2;
+    width: 100%;
+    /* Remove the empty left side of the source while keeping both robots visible. */
+    aspect-ratio: 1192 / 941;
+  }
+
+  .hero-image {
+    object-position: right center;
+  }
+
+  .hero-overlay {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {

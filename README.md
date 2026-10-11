@@ -1,6 +1,6 @@
 # UTAF Website
 
-University of Tokyo Autonomy Forge - UTAF の公式サイト用Next.jsプロジェクトです。
+The University of Tokyo Autonomy Forge - UTAF の公式サイト用Next.jsプロジェクトです。
 
 ## Stack
 
