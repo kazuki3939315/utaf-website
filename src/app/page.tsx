@@ -23,7 +23,7 @@ const strengths = [
   {
     index: "03",
     title: "研究の最前線から助言をもらえる",
-    body: "ロボット研究の最前線を走っていて顧問でもある河原塚先生に相談できます。",
+    body: "ロボット研究の最前線を走っていて顧問でもある、東京大学 次世代知能科学研究センター 講師の河原塚健人先生に相談できます。",
   },
 ];
 
@@ -306,14 +306,14 @@ export default function Home() {
 
       <section id="message" className="border-b border-black/10 bg-[var(--color-cream)] px-5 py-16 md:px-8 md:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.7fr_1.3fr]">
-          <SectionTitle eyebrow="Message" title="代表メッセージ" />
+          <SectionTitle eyebrow="Message" title="創設者メッセージ" />
           <div className="max-w-3xl space-y-6 text-base leading-8 text-[var(--color-muted)]">
-            <p>高校生のころから、大学に入ったら心の底から面白いと思えることをやりたいと考えていました。けれど、東大の授業を受け、1年生のうちに6つの研究室を見学しても、なかなか見つかりませんでした。正直に言えば、東大に入ったときは、自分がロボットの道に進むとは思ってもいませんでした。</p>
-            <p>転機は、Physical Intelligence社のロボットAI「π0（パイゼロ）」のデモ動画です。ロボットが洗濯機から洗濯物を取り出し、机まで運んで畳んでいく。その姿に、心の底から感動しました。</p>
-            <p>これを自分でもやってみたい。でも東大には、学部生が気軽にAIロボットに触れられる場所がありませんでした。だから、UTAFを立ち上げました。私自身、ロボットもプログラミングも未経験からのスタートです。</p>
+            <p>高校生のころから、大学に入ったら心の底から面白いと思えることをやりたいと考えていました。けれど、東大の授業を受け、1年生のうちに6つの研究室を見学しても、なかなか見つかりませんでした。</p>
+            <p>転機は、Physical Intelligence社のロボットAI「π0（パイゼロ）」のデモ動画です。ロボットが乾燥機から洗濯物を取り出し、机まで運んで畳んでいく。その姿に、心の底から感動しました。</p>
+            <p>これを自分でもやってみたい。でも、学部生が気軽にAIロボットに触れられる場所は見つけられませんでした。だから、UTAFを立ち上げました。私自身、ロボットもプログラミングも未経験からのスタートです。</p>
             <p>UTAFには、実機と、仲間と、研究の最前線にいる先生がいます。足りないのは「やってみたい」と思うあなただけです。</p>
             <p className="text-xl font-black text-[var(--color-ink)]">一緒に、ロボットを動かすところから始めましょう。</p>
-            <p className="pt-2 font-bold text-[var(--color-ink)]">UTAF 代表 川嶋凌児</p>
+            <p className="pt-2 font-bold text-[var(--color-ink)]">UTAF 創設者 川嶋凌児</p>
           </div>
         </div>
       </section>
@@ -346,6 +346,16 @@ export default function Home() {
             >
               公式LINEを友だち追加する
             </a>
+            <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">
+              LINEを使っていない方は{" "}
+              <a
+                href="https://forms.gle/dVJtofTXxynHmdtp6"
+                className="underline underline-offset-4 transition hover:text-[var(--color-teal)]"
+              >
+                こちらのフォーム
+              </a>{" "}
+              から（数日以内にメールでご連絡します）
+            </p>
             <div className="mt-8 flex flex-wrap items-center gap-5 border-t border-black/10 pt-6">
               <a href={lineUrl} aria-label="公式LINEを友だち追加するQRコード">
                 <Image src="/images/utaf-line-qr.png" alt="UTAF公式LINEの友だち追加用QRコード" width={540} height={540} unoptimized className="h-40 w-40 bg-white" />
@@ -372,6 +382,26 @@ export default function Home() {
             <h2 className="mt-6 text-3xl font-black">
               The University of Tokyo Autonomy Forge
             </h2>
+            <nav aria-label="UTAFのSNS" className="mt-4 flex gap-3">
+              <a
+                href="https://x.com/UTAF_PhysicalAI"
+                target="_blank"
+                rel="noopener"
+                aria-label="UTAFのX（新しいタブで開く）"
+                className="inline-flex h-11 w-11 items-center justify-center border border-white/30 transition hover:border-[var(--color-yellow)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+              >
+                <Image src="/icons/brand-x.svg" alt="" width={24} height={24} unoptimized />
+              </a>
+              <a
+                href="https://www.instagram.com/utaf_utokyo_autonomy_forge/"
+                target="_blank"
+                rel="noopener"
+                aria-label="UTAFのInstagram（新しいタブで開く）"
+                className="inline-flex h-11 w-11 items-center justify-center border border-white/30 transition hover:border-[var(--color-yellow)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+              >
+                <Image src="/icons/brand-instagram.svg" alt="" width={24} height={24} unoptimized />
+              </a>
+            </nav>
             <p className="mt-3 max-w-xl leading-8 text-white/70">
               スポンサー・支援の相談も歓迎しています。企業・大学関係者の方はメールでお問い合わせください。
             </p>
